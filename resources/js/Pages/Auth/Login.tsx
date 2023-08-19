@@ -4,9 +4,8 @@ import GuestLayout from '@/Layouts/GuestLayout';
 import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
-import TextInput from '@/Components/TextInput';
 import { Head, Link, useForm } from '@inertiajs/react';
-import { Input } from '@/Components/ui/input';
+import { Input } from '@/Components/ui/Input';
 
 export default function Login({
   status,
@@ -52,7 +51,7 @@ export default function Login({
             value={data.email}
             className="block w-full mt-1"
             autoComplete="username"
-            isFocused={true}
+            autoFocus
             onChange={e => setData('email', e.target.value)}
           />
 

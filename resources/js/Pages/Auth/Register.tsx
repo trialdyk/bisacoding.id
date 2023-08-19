@@ -4,7 +4,7 @@ import InputError from '@/Components/InputError';
 import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import { Head, Link, useForm } from '@inertiajs/react';
-import { Input } from '@/Components/ui/input';
+import { Input } from '@/Components/ui/Input';
 
 export default function Register() {
   const { data, setData, post, processing, errors, reset } = useForm({
@@ -40,7 +40,7 @@ export default function Register() {
             value={data.name}
             className="block w-full mt-1"
             autoComplete="name"
-            isFocused={true}
+            autoFocus
             onChange={e => setData('name', e.target.value)}
             required
           />
