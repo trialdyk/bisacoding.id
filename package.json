@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build && vite build --ssr",
     "lint": "eslint --fix .",
-    "format": "prettier 'resources/{ts,tsx}/**/*.{ts,tsx}' --write",
+    "format": "prettier 'resources/js/**/*.{ts,tsx}' --write",
     "pre-commit": "npm run format && lint-staged && pretty-quick --staged"
   },
   "devDependencies": {
