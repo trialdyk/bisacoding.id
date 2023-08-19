@@ -1,8 +1,8 @@
 module.exports = {
     root: true,
     parserOptions: {
-        ecmaVersion: 2020, // Use the latest ecmascript standard
-        sourceType: "module", // Allows using import/export statements
+        ecmaVersion: 2020,
+        sourceType: "module",
         ecmaFeatures: {
             tsx: true,
         },
