@@ -18,7 +18,7 @@ use Inertia\Inertia;
 
 
 Route::get('/', function () {
-    return 'Test';
+    return 'Test 2';
 });
 
 Route::get('/dashboard', function () {
