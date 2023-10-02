@@ -18,7 +18,9 @@ use Inertia\Inertia;
 
 
 Route::get('/', function () {
-    return 'Test 3';
+
+    $bagus = true;
+    return !$bagus;
 });
 
 Route::get('/dashboard', function () {
