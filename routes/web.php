@@ -20,7 +20,7 @@ use Inertia\Inertia;
 Route::get('/', function () {
 
     $bagus = true;
-    return !$bagus;
+     dd(!$bagus);
 });
 
 Route::get('/dashboard', function () {
