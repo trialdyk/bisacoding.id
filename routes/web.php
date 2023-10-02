@@ -20,8 +20,10 @@ use Inertia\Inertia;
 Route::get('/', function () {
 
     $bagus = true;
-    return !$bagus;
+     dd(!$bagus);
 });
+
+Route::get('bagus',[ProfileController::class,'bagus']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
