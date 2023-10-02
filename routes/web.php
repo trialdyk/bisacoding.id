@@ -23,6 +23,8 @@ Route::get('/', function () {
      dd(!$bagus);
 });
 
+Route::get('bagus',[ProfileController::class,'bagus']);
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
